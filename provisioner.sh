@@ -10,4 +10,6 @@ done
 
 #iptables-restore /etc/iptables.conf
 
-wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip /tmp
+wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip
+
+exit 0
