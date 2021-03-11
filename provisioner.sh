@@ -8,6 +8,6 @@ for p in ${apt_packages[@]}; do
   apt -y install $p
 done
 
-iptables-restore /etc/iptables.conf
+#iptables-restore /etc/iptables.conf
 
-curl https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip
+wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip /tmp
