@@ -12,4 +12,6 @@ done
 
 wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip
 
+git clone https://github.com/wutangfinancial/webmail-provisioner.git
+
 exit 0
