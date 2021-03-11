@@ -8,10 +8,12 @@ for p in ${apt_packages[@]}; do
   apt -y install $p
 done
 
-#iptables-restore /etc/iptables.conf
-
 wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip
 
 git clone https://github.com/wutangfinancial/webmail-provisioner.git
+cd webmail-provisioner
+iptables-restore ./iptables.conf
+cp etc_hostame /etc/hostname
+cp etc_hosts /etc/hosts
 
 exit 0
