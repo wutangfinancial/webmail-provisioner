@@ -8,14 +8,14 @@ for p in ${apt_packages[@]}; do
   apt -y install $p
 done
 
+pip3 install -U letsencrypt-nginx
 
 git clone https://github.com/wutangfinancial/webmail-provisioner.git
 cd webmail-provisioner
 iptables-restore ./iptables.conf
 cp etc_hostname /etc/hostname
-#cp etc_hosts /etc/hosts
-
-pip3 install -U letsencrypt-nginx
+hostname webmail
+./createSshKey.sh
 
 
 
