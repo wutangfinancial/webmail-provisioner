@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx php-fpm letsencrypt mutt)
+apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx python3-pip php-fpm certbot mutt)
 
 apt -y update
 apt -y upgrade
