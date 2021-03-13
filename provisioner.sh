@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx python3-pip php-fpm certbot mutt)
+apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx python3-pip php-fpm certbot mutt unzip)
 
 apt -y update
 apt -y upgrade
@@ -16,7 +16,9 @@ cp etc_hostname /etc/hostname
 #cp etc_hosts /etc/hosts
 
 pip3 install -U letsencrypt-nginx
-wget https://www.rainloop.net/repository/webmail/rainloop-community-latest.zip
+
+
+
 
 
 exit 0
