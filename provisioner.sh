@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx python3-pip php-fpm certbot mutt unzip)
+apt_packages=(git net-tools speedtest-cli gcc cpp make iptables nginx python4-pip php-fpm php-curl php-dom certbot mutt unzip tcpdump)
 
 apt -y update
 apt -y upgrade
